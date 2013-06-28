@@ -1,0 +1,101 @@
+/* Глобальные */
+body, img, form, fieldset, p,
+table, tr, td,
+h1, h2, h3, h4, h5, h6,
+dl, dd, dt, ul, li
+{ padding: 0; margin: 0; border: 0; }
+
+html, body { height: 100%; background-color: #ffffff;    
+             font: normal normal 11px Arial, Helvetica, sans-serif; }
+html table {font-size: 100%; }
+a img {border: none;}
+img {border: none;}
+
+a { color: #000;} 
+a:hover {color: #f00;} 
+
+
+#top { background: url(systemlab-logo1.png) no-repeat 210px 35px; 
+       width: 100%; height: 120px; } 
+#top-links { padding-top: 20px; margin-left: 420px; position: relative; top: 20px; list-style: none; } 
+#top-links a { color: #f00; }
+
+/* Главное меню*/
+#main-menu { background: #f00 url(red-bg.png) repeat-x;}
+#main-menu-wrap-1 { background: url(red-r.png) no-repeat top right; }
+#main-menu-wrap-2 { background: url(red-l.png) no-repeat top left; height: 38px;}
+
+body { behavior:url(csshover.htc); } 
+#main-menu ul { list-style: none; margin: 0 6px; padding: 0; float: left; }
+#main-menu li { float: left; position: relative; background: #515151; back\ground: none; }
+
+#main-menu a { color: #fff; display: block; line-height: 38px; padding: 0px 10px; }
+#main-menu a:hover { color: #fff; background: background: url(mmi-wb.png) no-repeat center top; }
+#main-menu a.sel {font-weight: bold;}
+#main-menu li:hover { background: url(mmi-wb.png) no-repeat center top; }
+
+#main-menu li ul { display: none; position: absolute; background: none; }
+#main-menu li li {color: #000; background: #fff; clear: both;}
+#main-menu li li a { color: #000; background: #fff; height: 20px; line-height: 20px; width: 110px; border: 1px solid #f00; border-top: 0; }
+#main-menu li li a:hover {color: #fff; background: #f00; }
+
+#main-menu li:hover ul{ display: block; }
+
+#main-menu li:hover li ul { border-top: 1px solid #f00; display: none; top: 0; left: 103px; }
+#main-menu li:hover li:hover ul { display: block; }
+
+
+/* основной контент */
+#main-content-wrap { padding: 10px 10px; }
+
+.main-header {color: #f00; display: block; font-size: 12px; border-bottom: 3px solid #f00; padding-bottom: 2px; margin-bottom: 2px;}
+
+#main-content { color: #717171; text-align: justify;  margin-right: 260px; padding-top: 5px;}
+#main-content h1 { color: #f00; font-size: 12px; }
+#main-content p { text-indent: 1em; padding: 2px 0; }
+#main-content ul { margin-left: 3em; }
+#main-content hr {color: #aaaaaa; height: 1px; border: none;} /* Для IE */
+html>body #main-content hr {background-color: #aaaaaa; color: #c8c8c8; height: 1px; border: none;} /* Для броузеров на базе Gecko */
+
+.float-left { float: left; margin-right: 2em; }
+
+.news-block { background-color: #eee; border: 1px solid #dfdfdf; 
+              border: 1px solid #dfdfdf; -moz-border-radius: 8px; -moz-box-sizing: border-box; behavior: url(border-radius.htc);
+              width: 250px; float: right; }
+.news-block .main-header {margin: 5px 10px 0; }
+.news-item {padding: 5px 0px; margin: 0 10px;}
+.news-item .date {color: #f00; border-bottom: 1px solid #d0d0d0; }
+.news-item .content {}
+
+
+
+#footer {margin-top: 10px; padding-bottom: 10px;}
+
+#footer-contacts {color: #999; padding: 10px 0 0 10px;  border-top: 3px solid #f00; width: 180px; float: left;}
+#footer-contacts ul {list-style: none;}
+
+#footer-menu {border-top: 3px solid #f00; margin-left: 200px;}
+
+#footer .menu ul {}
+#footer .menu ul li {display: inline;}
+#footer .menu ul li a {color: #f00;  padding: 0 10px; height: 38px; line-height: 38px; display: block; float: left; }
+#footer .menu ul li a:hover {background: url(fmi-rb.png) no-repeat center top;}
+#footer .menu ul li a.sel { font-weight: bold; }
+
+
+#slmanager-banner {background-color: #eee; text-align: center; padding: 0; width: 189px; 
+                   border: 1px solid #dfdfdf; border-top: 0;}
+                   
+#slmanager-banner .content {text-align: left; margin: 5px; }
+#slmanager-banner .content ul { margin-left: 2em; }
+#slmanager-banner .content li {}
+
+.left-block { background-color: #eee; border: 1px solid #dfdfdf; 
+              border: 1px solid #dfdfdf; -moz-border-radius: 8px; -moz-box-sizing: border-box; 
+              /*behavior: url(/images/border-radius.htc);*/
+              width: 189px; margin: 10px 0px 0; text-align : left; }
+.left-block .main-header {margin: 5px 10px 0; }
+.left-block .block-item {padding: 5px 0px; margin: 0 10px;}
+
+#main-container {border-collapse: collapse; width: 100%; font-size: 11px; }
+#main-container td { vertical-align: top;  }
